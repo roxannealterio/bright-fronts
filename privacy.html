@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#1A1715">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy | Brightfront Studio</title>
+<meta name="description" content="How Brightfront Studio collects, uses and protects your personal information.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#FFFFFF;--sand:#F1EEEA;--ink:#231F1C;--muted:#5C534D;--soft:#7F756E;--line:#E4DFD9;--taupe:#9E8880;--bronze:#8A5A30}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--paper:#1A1715;--sand:#24201D;--ink:#F2EEEA;--muted:#C9C0B8;--soft:#A2978F;--line:#36302C;--taupe:#B9A69D;--bronze:#D9A877}}
+:root[data-theme="dark"]{--paper:#1A1715;--sand:#24201D;--ink:#F2EEEA;--muted:#C9C0B8;--soft:#A2978F;--line:#36302C;--taupe:#B9A69D;--bronze:#D9A877}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.7 "Schibsted Grotesk","Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--ink)}
+:focus-visible{outline:2px solid var(--bronze);outline-offset:3px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,64px)}
+header{height:76px;display:flex;align-items:center}
+.logo{display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;font-weight:800;font-size:21px;letter-spacing:-0.03em}
+.mark{width:26px;height:26px;border-radius:8px;background:var(--ink);position:relative;overflow:hidden}
+.mark::after{content:"";position:absolute;inset:0 0 0 50%;background:var(--taupe)}
+main{max-width:760px;padding:clamp(40px,6vw,80px) 0 96px}
+h1{font-size:clamp(40px,6vw,64px);font-weight:800;letter-spacing:-0.045em;line-height:1;margin:0 0 14px}
+.meta{color:var(--soft);font-size:15px;margin:0 0 36px}
+.summary{background:var(--sand);border-radius:18px;padding:22px 26px;margin-bottom:36px}
+.summary h2{margin:0 0 8px;font-size:18px}
+.summary ul{margin:0;padding-left:20px;color:var(--muted)}
+h2{font-size:24px;font-weight:700;letter-spacing:-0.02em;margin:44px 0 10px;line-height:1.2}
+p,li{color:var(--muted)}
+p{margin:0 0 14px}
+ul{padding-left:22px;margin:0 0 14px}
+li{margin-bottom:6px}
+strong{color:var(--ink);font-weight:600}
+footer{border-top:1.5px solid var(--line);padding:32px 0 48px;font-size:15px;color:var(--soft)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer nav{display:flex;gap:22px}
+footer a{color:var(--muted);text-decoration:none}
+h1{font-family:"Fraunces",Georgia,serif!important;font-weight:400!important;letter-spacing:-0.025em!important}
+
+/* ============ one look, everywhere ============
+   The site is always shown in its dark, warm palette (whatever the visitor's phone is set to),
+   with one background for every section. Separation comes from spacing and matching cards,
+   not from bands of slightly different colour. */
+html:root:not(#bf){
+  color-scheme:dark;
+  --paper:#1A1715; --shell:#1A1715; --sand:#221E1B; --card:#221E1B; --line:#342E2A;
+  --ink:#F2EEEA; --muted:#C9C0B8; --soft:#A2978F; --taupe:#B9A69D; --deep:#D2C3BA; --bronze:#D9A877;
+  --dark:#221E1B; --on-dark:#F6F3EF; --on-dark-muted:#BDB3AA; --dark-line:#3A332E;
+  --surface:#221E1B; --edge:rgba(246,243,239,.08); --edge-hi:rgba(246,243,239,.42);
+}
+html,body{background:#1A1715}
+.tone-a,.tone-b,.tone-c,.work,.showcase,footer{background:transparent}
+/* every card sits on the same raised surface with the same hairline */
+.plan,.swap,.extra,.plain-steps li,.start-panel,.then,.care,.tp,.browser,.inbox,.mail,.v-card,.step .vis,.no-photo,.for-pt,.box{background:var(--surface);border:1px solid var(--edge);box-shadow:none}
+.stage::before{background:var(--surface);border:1px solid var(--edge)}
+/* the recommended option: same card, brighter edge, cream button (like the hero) */
+.plan.main{background:var(--surface);color:var(--ink);border:1.5px solid var(--edge-hi)}
+.plan.main > p,.plan.main .price small{color:var(--muted)}
+.plan .btn{background:transparent;color:var(--ink);border-color:var(--edge-hi)}
+.plan.main .btn{background:var(--on-dark);color:#1A1715;border-color:var(--on-dark)}
+.plan .btn:hover{background:rgba(246,243,239,.06)}
+.plan.main .btn:hover{background:#fff}
+.start-panel{border-radius:20px}
+.path{border-color:var(--edge)}
+.path:hover{border-color:var(--edge-hi)}
+.visit a,.visit button{border-color:var(--edge)}
+.btn-line{border-color:var(--edge-hi)}
+.menu-btn{border-color:var(--edge)}
+summary .pm{background:var(--surface)}
+details,details:first-of-type{border-color:var(--edge)}
+.browser .chrome{background:#2A2522}
+.browser .chrome i{background:#4A423D}
+.browser .chrome span{background:#1F1B19;color:#A2978F}
+.float{background:var(--surface);box-shadow:0 22px 44px -22px rgba(0,0,0,.7),0 0 0 1px var(--edge)}
+.pop .tags span,.chipset span{background:#2B2623;border-color:var(--edge)}
+.site-head{background:color-mix(in srgb,#1A1715 88%,transparent)}
+.site-head.scrolled{box-shadow:0 1px 0 var(--edge)}
+footer{border-top:1px solid var(--edge)}
+/* icons that sit on a cream chip need a dark stroke */
+.for-pt i svg,.arrow svg,.pop .hd i svg,.done-mark svg,.opt .tick svg,.big-call i svg{stroke:#1A1715}
+.big-call i{background:#1A1715}.big-call i svg{stroke:#F6F3EF}
+/* the sample text conversation stays a light phone screen */
+.chat{background:#FAF9F7;color:#231F1C}
+.chat .who b,.msg.us{color:#231F1C}
+.chat .who,.chat .time{color:#7F756E}
+</style>
+<!-- seo -->
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://brightfrontstudio.com/privacy.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Brightfront Studio">
+<meta property="og:locale" content="en_AU">
+<meta property="og:url" content="https://brightfrontstudio.com/privacy.html">
+<meta property="og:title" content="Privacy policy | Brightfront Studio">
+<meta property="og:description" content="How Brightfront Studio collects, uses and protects your personal information.">
+<meta property="og:image" content="https://brightfrontstudio.com/img/social/home.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Privacy policy | Brightfront Studio">
+<meta name="twitter:description" content="How Brightfront Studio collects, uses and protects your personal information.">
+<meta name="twitter:image" content="https://brightfrontstudio.com/img/social/home.jpg">
+<meta name="geo.region" content="AU-QLD">
+<meta name="geo.placename" content="Brisbane">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://brightfrontstudio.com/#studio","name":"Brightfront Studio","url":"https://brightfrontstudio.com/"},{"@type":"WebPage","@id":"https://brightfrontstudio.com/privacy.html#page","url":"https://brightfrontstudio.com/privacy.html","name":"Privacy policy | Brightfront Studio","description":"How Brightfront Studio collects, uses and protects your personal information.","isPartOf":{"@id":"https://brightfrontstudio.com/#site"},"about":{"@id":"https://brightfrontstudio.com/#studio"},"inLanguage":"en-AU","primaryImageOfPage":"https://brightfrontstudio.com/img/social/home.jpg"}]}</script>
+<!-- /seo -->
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="index.html"><span class="mark" aria-hidden="true"></span>Brightfront</a></div></header>
+<div class="wrap"><main>
+<h1>Privacy policy</h1>
+<p class="meta">Last updated 19 September 2026</p>
+<div class="summary"><h2>The short version</h2><ul>
+<li>We only collect what we need to reply to you and do your project.</li>
+<li>We never sell your information or use it for advertising.</li>
+<li>You can ask to see, correct or delete your information at any time.</li>
+</ul></div>
+
+<p>Brightfront Studio (ABN 80 241 124 181) designs and looks after websites for small businesses. This policy explains how we handle personal information, in line with the Australian Privacy Principles in the <em>Privacy Act 1988</em> (Cth).</p>
+
+<h2>What we collect</h2>
+<p>When you use our project planner, book a call, request a review, or contact us, we collect the details you give us. This may include:</p>
+<ul>
+<li>your name, business name, email address and phone number</li>
+<li>your current website, and answers about your business and the website you want</li>
+<li>the time you book for a call</li>
+<li>files you choose to upload, such as logos, photos, screenshots or brand guides</li>
+</ul>
+<p>We may also hold publicly listed business contact details, such as an email address published on a business website or directory, so we can offer services relevant to that business.</p>
+<p>Our website doesn't use advertising or tracking cookies. Our project planner saves your answers in your own browser while you fill it in, so you don't lose them if you close the page. That copy stays on your device and is removed when you send your answers.</p>
+
+<h2>How we use it</h2>
+<ul>
+<li>to reply to you, prepare a quote and arrange calls</li>
+<li>to review your current website (which is public) and plan your project</li>
+<li>to design, build, host and support your website</li>
+<li>to send you service messages, such as confirmations and updates about your project</li>
+<li>to keep business records we're required to keep by law</li>
+</ul>
+<p>We only send marketing emails where the <em>Spam Act 2003</em> (Cth) allows it, and every one includes a simple way to opt out. If you opt out, we stop straight away.</p>
+
+<h2>AI tools</h2>
+<p>We use AI tools (Anthropic's Claude) to help review websites, plan projects from your answers and uploads, draft designs and draft emails. A person at Brightfront reviews this work before anything is sent to you or published. Under Anthropic's commercial terms, information we send through their business service isn't used to train their AI models.</p>
+
+<h2>Who we share it with</h2>
+<p>We don't sell or rent your information. We use a small number of service providers who handle it on our behalf:</p>
+<ul>
+<li><strong>Supabase</strong>, which stores our enquiries and the files you upload (hosted in Sydney, Australia)</li>
+<li><strong>LeadConnector (GoHighLevel)</strong>, our customer management system</li>
+<li><strong>Resend</strong>, which delivers our emails</li>
+<li><strong>Anthropic</strong>, the AI provider described above</li>
+<li>our website and domain hosting providers</li>
+</ul>
+<p>Some of these providers are based overseas, mainly in the United States, and may store or process information there. We choose providers with strong security practices and only share what they need to do their job.</p>
+<p>If we build a website for you, the photos and logo used on it are stored where the website can display them publicly, like any image on a public website. Your other files stay private.</p>
+
+<h2>Enquiry forms on websites we build</h2>
+<p>Some websites we build for our clients include an enquiry form. When someone sends that form, we pass their message to the business that owns the website and keep a copy so we can support that business. That business is responsible for how it uses the enquiry. If you have a question about an enquiry you sent to one of our clients, contact that business first. We're also happy to help.</p>
+
+<h2>Keeping it safe</h2>
+<p>We store information in secure, access-controlled systems, and only people who need it for their work can see it. We keep enquiries only as long as we need them for the purposes above or as required by law, then delete or de-identify them.</p>
+
+<h2>Your choices</h2>
+<p>You can ask to access the personal information we hold about you, correct it, or have it deleted. Email <a href="mailto:hello@brightfrontstudio.com">hello@brightfrontstudio.com</a> and we'll respond within 30 days.</p>
+<p>If you're unhappy with how we've handled your information, please tell us first and we'll try to fix it. If you're still not satisfied, you can contact the Office of the Australian Information Commissioner at <a href="https://www.oaic.gov.au">oaic.gov.au</a>.</p>
+
+<h2>Contact</h2>
+<p>Brightfront Studio, Brisbane, Queensland<br>ABN 80 241 124 181<br><a href="mailto:hello@brightfrontstudio.com">hello@brightfrontstudio.com</a></p>
+</main></div>
+<footer><div class="wrap"><span>&copy; 2026 Brightfront Studio, Brisbane, Queensland. ABN 80 241 124 181</span><nav><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></footer>
+<!-- analytics -->
+</body>
+</html>
