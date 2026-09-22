@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Your website draft | Brightfront Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#FFFFFF;--sand:#F1EEEA;--card:#FAF9F7;--ink:#231F1C;--muted:#5E524B;--soft:#7A6D65;--line:#E4DFD9;--taupe:#9E8880;--good:#2F6B47}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--paper:#1F1B19;--sand:#2A2421;--card:#272120;--ink:#EEE7E0;--muted:#C4B8AE;--soft:#A89A90;--line:#3D3531;--taupe:#B5A197;--good:#8FCB9F}}
+:root[data-theme="dark"]{--paper:#1F1B19;--sand:#2A2421;--card:#272120;--ink:#EEE7E0;--muted:#C4B8AE;--soft:#A89A90;--line:#3D3531;--taupe:#B5A197;--good:#8FCB9F}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{margin:0;height:100%}
+body{background:var(--paper);color:var(--ink);font:16px/1.5 "Schibsted Grotesk","Helvetica Neue",Arial,sans-serif;display:flex;flex-direction:column}
+button,textarea,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid #8A5A30;outline-offset:2px}
+.bar{display:flex;align-items:center;gap:16px;padding:12px clamp(14px,3vw,28px);border-bottom:1px solid var(--line);flex-wrap:wrap}
+.brand{font:500 20px "Schibsted Grotesk","Helvetica Neue",Arial,sans-serif;white-space:nowrap}
+.brand i{color:var(--taupe);font-size:15px}
+.title{flex:1;min-width:180px;font-size:15px;color:var(--muted)}
+.title b{color:var(--ink);font-weight:600}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.seg button{border:none;background:var(--card);padding:8px 14px;font-size:14px;font-weight:500;cursor:pointer;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+@media (max-width:700px){.seg{display:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 20px;border-radius:999px;border:1px solid var(--ink);background:transparent;cursor:pointer;font-weight:500;font-size:15px;color:var(--ink)}
+.btn-solid{background:var(--ink);color:var(--paper)}
+.stage{flex:1;position:relative;background:var(--sand);display:flex;justify-content:center;overflow:hidden}
+.stage iframe{border:0;width:100%;height:100%;background:#fff;transition:width .4s cubic-bezier(.2,.75,.15,1)}
+.stage.mobile iframe{width:390px;max-width:100%;border-left:1px solid var(--line);border-right:1px solid var(--line)}
+.center{flex:1;display:grid;place-items:center;text-align:center;padding:40px 20px}
+.center h1{font:400 clamp(32px,5vw,48px)/1.1 "Schibsted Grotesk","Helvetica Neue",Arial,sans-serif;margin:0 0 10px}
+.center p{color:var(--muted);max-width:44ch;margin:0 auto}
+.sheet{position:fixed;inset:0;background:rgba(28,24,22,.45);display:flex;align-items:flex-end;justify-content:center;z-index:10}
+.sheet[hidden]{display:none}
+.sheet-in{background:var(--paper);width:min(560px,100%);border-radius:22px 22px 0 0;padding:26px clamp(20px,4vw,32px) 28px;display:flex;flex-direction:column;gap:14px;animation:up .35s cubic-bezier(.2,.75,.15,1)}
+@media (min-width:700px){.sheet{align-items:center}.sheet-in{border-radius:22px}}
+@keyframes up{from{transform:translateY(30px);opacity:0}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){.sheet-in{animation:none}.stage iframe{transition:none}}
+.sheet h2{font:400 30px/1.1 "Schibsted Grotesk","Helvetica Neue",Arial,sans-serif;margin:0}
+.sheet p{margin:0;color:var(--muted)}
+.sheet label{font-size:14px;color:var(--muted)}
+.sheet textarea,.sheet input{width:100%;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+.sheet textarea{min-height:130px;resize:vertical}
+.row{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}
+.err{color:#A33A2A;font-size:14px;min-height:1em}
+.status{font-size:14px;padding:4px 12px;border-radius:999px;background:var(--card);border:1px solid var(--line)}
+.status.ok{color:var(--good);border-color:var(--good)}
+.mark{display:inline-block;width:22px;height:22px;border-radius:7px;background:var(--ink);position:relative;overflow:hidden;vertical-align:-4px;margin-right:9px}
+.mark::after{content:"";position:absolute;inset:0 0 0 50%;background:var(--taupe)}
+h1,h2{font-weight:800!important;letter-spacing:-0.035em}
+.brand,header a{font-weight:800!important;letter-spacing:-0.03em}
+h1{font-family:"Fraunces",Georgia,serif!important;font-weight:400!important;letter-spacing:-0.025em!important}
+</style>
+</head>
+<body>
+<div class="bar">
+  <span class="brand"><span class="mark" aria-hidden="true"></span>Brightfront</span>
+  <span class="title" id="title">Loading your draft</span>
+  <div class="seg" role="group" aria-label="Preview size" id="seg" hidden><button data-vm="desktop" aria-pressed="true">Computer</button><button data-vm="mobile" aria-pressed="false">Phone</button></div>
+  <div id="actions" hidden style="gap:8px;align-items:center;display:flex">
+    <span class="status" id="status" hidden></span>
+    <button class="btn" id="changesBtn">Request changes</button>
+    <button class="btn btn-solid" id="approveBtn">Approve</button>
+  </div>
+</div>
+<main class="stage" id="stage"><div class="center"><p>Loading...</p></div></main>
+
+<div class="sheet" id="sheet" hidden>
+  <form class="sheet-in" id="sheetForm" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" novalidate>
+    <h2 id="sheetTitle"></h2>
+    <p id="sheetText"></p>
+    <div><label for="fbName">Your name</label><input id="fbName" autocomplete="name"></div>
+    <div><label for="fbText" id="fbLabel"></label><textarea id="fbText"></textarea></div>
+    <div class="err" id="sheetErr" role="alert"></div>
+    <div class="row"><button type="button" class="btn" id="sheetCancel">Cancel</button><button type="submit" class="btn btn-solid" id="sheetSend">Send</button></div>
+  </form>
+</div>
+
+<script>
+(function(){
+  // Same project ref as the website planner (README step 4)
+  var ENDPOINT='https://YOUR-PROJECT-REF.supabase.co/functions/v1/site-preview';
+  var token=new URLSearchParams(location.search).get('d')||'';
+  var $=function(id){return document.getElementById(id);};
+  var decision='changes', lastFocus=null;
+
+  function post(data){
+    return fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(Object.assign({token:token},data))})
+      .then(function(r){return r.json().catch(function(){return {};}).then(function(j){ if(!r.ok||j.error) throw new Error(j.error||'Something went wrong.'); return j; });});
+  }
+  function message(h,p){ $('stage').innerHTML='<div class="center"><div><h1>'+h+'</h1><p>'+p+'</p></div></div>'; $('title').textContent=''; }
+  function setStatus(s){
+    var el=$('status');
+    if(s==='approved'){ el.hidden=false; el.className='status ok'; el.textContent='You approved this'; }
+    else if(s==='changes'){ el.hidden=false; el.className='status'; el.textContent='Changes requested'; }
+    else el.hidden=true;
+  }
+
+  if(!/^[0-9a-f]{36}$/.test(token)){ message('This link isn\'t complete','Check you copied the whole link from our email, or ask us to send it again.'); return; }
+
+  post({action:'get'}).then(function(d){
+    document.title=d.business+' website draft | Brightfront Studio';
+    $('title').innerHTML='<b></b> website draft, version '+d.version;
+    $('title').querySelector('b').textContent=d.business;
+    var f=document.createElement('iframe');
+    f.title=d.business+' website draft';
+    f.setAttribute('sandbox','allow-scripts allow-popups');
+    f.srcdoc=d.html;
+    $('stage').innerHTML=''; $('stage').appendChild(f);
+    $('seg').hidden=false; $('actions').hidden=false; setStatus(d.client_status);
+  }).catch(function(e){ message('We couldn\'t open this draft',e.message); });
+
+  document.querySelectorAll('[data-vm]').forEach(function(b){ b.onclick=function(){
+    document.querySelectorAll('[data-vm]').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
+    $('stage').classList.toggle('mobile',b.dataset.vm==='mobile'); }; });
+
+  function openSheet(kind){
+    decision=kind; lastFocus=document.activeElement; $('sheetErr').textContent='';
+    $('sheetTitle').textContent=kind==='approve'?'Approve your website':'What would you like changed?';
+    $('sheetText').textContent=kind==='approve'?'Happy with how it looks? We\'ll get it ready to go live and be in touch about next steps.':'Be as specific as you can, for example "make the phone number bigger at the top" or "use the photo of the shopfront on the home page".';
+    $('fbLabel').textContent=kind==='approve'?'Any last notes? (optional)':'Your changes';
+    $('sheetSend').textContent=kind==='approve'?'Approve website':'Send changes';
+    $('sheet').hidden=false; $('fbName').focus();
+  }
+  function closeSheet(){ $('sheet').hidden=true; if(lastFocus) lastFocus.focus(); }
+  $('approveBtn').onclick=function(){openSheet('approve');};
+  $('changesBtn').onclick=function(){openSheet('changes');};
+  $('sheetCancel').onclick=closeSheet;
+  $('sheet').addEventListener('click',function(e){ if(e.target===$('sheet')) closeSheet(); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&!$('sheet').hidden) closeSheet(); });
+  $('sheetForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    var text=$('fbText').value.trim();
+    if(decision==='changes'&&!text){ $('sheetErr').textContent='Tell us what you\'d like changed.'; $('fbText').focus(); return; }
+    var btn=$('sheetSend'); btn.disabled=true; btn.textContent='Sending';
+    post({action:'feedback',decision:decision,comments:text,name:$('fbName').value.trim()}).then(function(){
+      setStatus(decision==='approve'?'approved':'changes');
+      $('sheetTitle').textContent=decision==='approve'?'Thank you!':'Got it, thanks';
+      $('sheetText').textContent=decision==='approve'?'We\'ve been notified and will be in touch shortly about going live.':'We\'ll make those changes and send you an updated link. The link stays the same, so you can check back here too.';
+      $('sheetForm').querySelectorAll('div').forEach(function(d){ if(!d.classList.contains('row')) d.hidden=true; });
+      $('sheetCancel').hidden=true; btn.disabled=false; btn.textContent='Done'; btn.type='button'; btn.onclick=function(){ closeSheet(); location.reload(); };
+      btn.focus();
+    }).catch(function(err){ $('sheetErr').textContent=err.message; btn.disabled=false; btn.textContent=decision==='approve'?'Approve website':'Send changes'; });
+  });
+})();
+</script>
+</body>
+</html>
